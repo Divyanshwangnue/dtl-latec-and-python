@@ -1,0 +1,48 @@
+\documentclass[10pt,a4paper]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+
+\author{Divyansh Wangnue 112103037 div1 S3}
+\title{Bibliography}
+\begin{document}
+\maketitle
+
+
+\section{System Programming in C}
+
+C is a Low Level Programming Language used to design Operating systems, Data Structures and algorithms. The C library provides a handful of functions for translating an errno value to the
+corresponding textual representation. This is needed only for error reporting, and the like;
+checking and handling errors can be done using the preprocessor defines and errno directly.
+Refer \cite{gfg} for more information about file handling in C...
+This function prints to stderr (standard error) the string representation of the current error
+described by errno, prefixed by the string pointed at by str, followed by a colon. To be useful,
+References at  \cite{C}..
+the name of the function that failed should be included in the string. For example:\\
+
+
+\includegraphics[scale=1]{"OurCommandLineUtil.png"}
+\\ [8pt]
+This code  was written by \cite{atharva}. We believe that the overall propensity for this to happen is told well by \cite{somesite}
+The former function returns a pointer to a string describing the error given by errnum. The
+string may not be modified by the application, but can be modified by subsequent perror( )
+and strerror( ) calls. In this manner, it is not thread-safe.
+
+For a few functions, the entire range of the return type is a legal return value. In those cases,
+errno must be zeroed before invocation, and checked afterward (these functions promise to
+only return a nonzero errno on actual error).
+\\ [12pt]
+ system("gnome-terminal")  is a way to spawn a new Linux terminal ... CREDITS given to\cite{gfg}
+
+\begin{thebibliography} {}
+\bibitem{somesite} https://igm.univ-mlv.fr/~yahya/progsys/linux.pdf
+\bibitem{gfg} Geeks For Geeks- File Handling in C
+\bibitem{C}Dennis and Ritchie, C programming for Beginners
+
+\end{thebibliography} 
+
+\end{document}
